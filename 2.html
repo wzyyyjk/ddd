@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #0e1324;
+        }
+        .top{
+            width: 1980px;
+            height: 135px;
+        }
+        .container {
+            width: 1980px;
+            height: 1080px;
+            /*border: 10px solid red;*/
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            /*设置子元素在主轴上的对其方式: 两端对齐*/
+            justify-content: space-between;
+        }
+        /* .left, .right, .center{ */
+            /*width: 500px;*/
+            /*height: 700px;*/
+            /*border: 10px solid blue;*/
+            /*margin: 10px;*/
+        /* } */
+
+        .box{
+            width: 480px;
+            height: 320px;
+            border: 1px solid #20588b;
+            margin-top: 28px;
+        }
+
+        .left .left-top{
+            /*width: 400px;*/
+            /*height: 200px;*/
+            /*border: 10px solid deeppink;*/
+            margin: 10px;
+        }
+        .left .left-center{
+            /*width: 400px;*/
+            /*height: 200px;*/
+            /*border: 10px solid deeppink;*/
+            margin: 10px;
+        }
+        .left .left-bottom{
+            /*width: 400px;*/
+            /*height: 200px;*/
+            /*border: 10px solid deeppink;*/
+            margin: 10px;
+        }
+
+        .right .right-top{
+            /*width: 400px;*/
+            /*height: 200px;*/
+            /*border: 10px solid deeppink;*/
+            margin: 10px;
+        }
+        .right .right-center{
+            /*width: 400px;*/
+            /*height: 200px;*/
+            /*border: 10px solid deeppink;*/
+            margin: 10px;
+        }
+        .right .right-bottom{
+            /*width: 400px;*/
+            /*height: 200px;*/
+            /*border: 10px solid deeppink;*/
+            margin: 10px;
+        }
+
+        .center .title{
+            width: 750px;
+            height: 110px;
+            border: 1px solid #20588b;
+            /*margin: 10px;*/
+        }
+        .center .title img{
+           text-align: left;
+        }
+        .center .title h1{
+            font-size: 50px;
+            color: "#1B77A8";
+            text-align: center;
+        }
+
+        .center .money{
+            width: 750px;
+            height: 100px;
+            border: 1px solid #20588b;
+            font-size: 30px;
+            color: "#92ECFE";
+            text-align: center;
+            /*margin: 10px;*/
+        }
+      
+
+        .center .center-chart{
+            width: 750px;
+            height: 490px;
+            border: 1px solid #20588b;
+            /*margin: 10px;*/
+        }
+
+        .center .money-detail{
+            width: 750px;
+            height: 320px;
+            border: 1px solid #20588b;
+            /*margin: 5px;*/
+        }
+          .chart{
+            width: 480px;
+            height: 300px;
+           background-color:#171C3A;
+          }
+          .charts{
+            width: 750px;
+            height: 490px;
+          }
+         .money-detail{
+            background-color: '#151A38';
+            color: #FFFFFF;
+          }
+
+        table, td,th{
+            font-size:20px ;
+            padding: 15px;
+           /* width: 133px; */
+          }       
+         td{
+            height:25px;
+         } 
+         tr{
+            width: 350px;
+         }
+        td{
+            margin: 0 15px;
+        }
+          
+    </style>
+</head>
+<body>s
+<div class="container">
+   
+    <div class="left">
+        <div class="left-top box">
+            <div class="chart" id="chart-demo"></div>   
+        </div>
+        <div class="left-center box">
+            left-center
+            <div class="chart"  id="chart-bar"> </div>
+        </div>
+        <div class="left-bottom box">
+            left-bottom
+            <div class="chart" id="chart-barr"> </div>
+        </div>
+    </div>
+
+    <div class="center">
+
+        <div class="title">
+           <!-- <img src="./img/01.png" alt=""> -->
+            <h1 style="color: #1B77A8;">运营部总业绩</h1>
+            
+        </div>
+        <div class="money">
+           <h1 style="color:#92ECFE ;">23,456,789</h1>
+        </div>
+        <div class="center-chart">
+            <div class="charts" id="chart-Pie"></div>
+        </div>
+        <div class="money-detail">
+            <table>
+                <tr>
+                    <th>用户资金明细</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>坐席xx的用户yhdf345784于16:59投资20万元,年化10万</td>
+                </tr>
+                <tr>
+                     <td>2</td>
+                     <td>坐席xx的用户yhdf345784于16:59投资20万元</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>坐席xx的用户yhdf345784于16:59投资20万元,年化10万</td>
+               </tr>
+               <tr>
+                <td>4</td>
+                <td>坐席xx的用户yhdf345784于16:59投资20万元</td>
+           </tr>
+            </table>
+        </div>
+
+    </div>
+    <div class="right">
+        <div class="right-top box">
+            <div class="chart" id="chart-demos"></div>   
+        </div>
+        <div class="right-center box">
+            <div class="chart" id="chart-barrr"> </div>
+        </div>
+        <div class="right-bottom box">
+            <div class="chart" id="chart-bars"> </div>
+        </div>
+    </div>
+
+
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.1/echarts.min.js"></script>
+<script src="./js/gauge.js"></script>
+<script src="./js/gauge2.js"></script>
+<script src="./js/bar1.js"></script>
+<script src="./js/bar2.js"></script>
+<script src="./js/old1.js"></script>
+<script src="./js/old2.js"></script>
+<script src="./js/pie.js"></script>
+</body>
+</html>

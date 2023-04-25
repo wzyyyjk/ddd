@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 2. 定义容器，设置ID属性，设置容器的宽度和高度 -->
+    <div id="chart1" style="width: 800px; height: 600px;"></div>
+    <!-- 1. 引入 echarts.js -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.1/echarts.min.js"></script>
+    <script>
+        let echart1Obj = document.getElementById('chart1')
+        let chart1 = echarts.init(echart1Obj)
+        // 4. 配置图表
+        let option1 = {
+            series: [
+                {
+                    type: 'tree',
+                    data: [
+                        {
+                            name: "董事长",
+                            children: [
+                                {
+                                    name: "总经理",
+                                    children: [
+                                        {
+                                            name: "行政总监",
+                                            children: [
+                                                {
+                                                    name: "综合管理部",
+                                                    label: {
+                                                        width: 20,
+                                                        overflow: "break",
+                                                        height: 80,
+                                                        borderWidth: 3,
+                                                        borderColor: '#FB9E00',
+                                                        borderStyle: 'solid',
+                                                        backgroundColor:'#FFFFFF',
+                                                        borderRadius: 5,
+
+                                                    }
+                                                },
+                                                {
+                                                    name: "企划部",
+                                                    label: {
+                                                        width: 20,
+                                                        overflow: "break",
+                                                        height: 80,
+                                                        borderWidth: 3,
+                                                        borderColor: '#FB9E00',
+                                                        borderStyle: 'solid',
+                                                        backgroundColor:'#FFFFFF',
+                                                        borderRadius: 5,
+                                                    }
+                                                },
+                                                {
+                                                    name: "品质部",
+                                                    label: {
+                                                        width: 20,
+                                                        overflow: "break",
+                                                        height: 80,
+                                                        borderWidth: 3,
+                                                        borderColor: '#FB9E00',
+                                                        borderStyle: 'solid',
+                                                        backgroundColor:"#FFFFFF",
+                                                        borderRadius: 5,
+                                                        // fontSize:20
+                                                    }
+                                                },
+
+                                            ],
+                                            label: {
+                                                backgroundColor: "#FB9E00",
+                                                color: "#FFFFFF",
+                                                width: 80,
+                                                height: 40,
+                                                borderRadius: 10,
+                                                fontSize:15
+                                            },
+                                            lineStyle:{
+                                      color:"#FB9E00",
+                                    }
+
+                                        },
+
+                                        {
+                                            name: "财务总监",
+                                            children: [
+                                                {
+                                                    name: "出纳",
+                                                    label: {
+                                                        width: 20,
+                                                        overflow: "break",
+                                                        height: 80,
+                                                        borderWidth: 3,
+                                                        borderColor: '#7B64FF',
+                                                        borderStyle: 'solid',
+                                                        backgroundColor:'#FFFFFF',
+                                                        borderRadius: 5,
+                                                    }
+                                                },
+                                                {
+                                                    name: "财务",
+                                                    label: {
+                                                        width: 20,
+                                                        overflow: "break",
+                                                        height: 80,
+                                                        borderWidth: 3,
+                                                        borderColor: '#7B64FF',
+                                                        borderStyle: 'solid',
+                                                        backgroundColor:'#FFFFFF',
+                                                        borderRadius: 5,
+                                                    }
+                                                }
+                                            ],
+                                            label: {
+                                                backgroundColor: "#7B64FF",
+                                                color: "#FFFFFF",
+                                                width: 80,
+                                                height: 40,
+                                                borderRadius: 10,
+                                                fontSize:15,
+                                                // fontWeight:40
+                                            },
+                                            lineStyle:{
+                                               color:"#7B64FF",
+                                            }
+                                        },
+                                        {
+                                            name: "运营总监",
+                                            children: [
+                                                {
+                                                name: "物业管理部",
+                                                children: [
+                                                    {
+                                                        name: "保洁",
+                                                        label: {
+                                                            width: 20,
+                                                            overflow: "break",
+                                                            height: 80,
+                                                            borderWidth: 3,
+                                                        borderColor: '#B0BC00',
+                                                        borderStyle: 'solid',
+                                                        backgroundColor:'#FFFFFF',
+                                                        borderRadius: 5,
+                                                        }
+                                                    },
+                                                    {
+                                                        name: "公共秩序维护",
+                                                        label: {
+                                                            width: 20,
+                                                            overflow: "break",
+                                                            height: 80,
+                                                            borderWidth: 3,
+                                                            borderColor: '#B0BC00',
+                                                            borderStyle: 'solid',
+                                                            backgroundColor:'#FFFFFF',
+                                                            borderRadius: 5,
+                                                            // border:"2px sloid #FB9E00" 
+                                                        },
+                                                        lineStyle:{
+                                                            width:4
+                                                        }
+                                                    },
+                                                    {
+                                                        name: "设备",
+                                                        label: {
+                                                            width: 20,
+                                                            overflow: "break",
+                                                            height: 80,
+                                                            borderWidth: 3,
+                                                        borderColor: '#B0BC00',
+                                                        borderStyle: 'solid',
+                                                        backgroundColor:'#FFFFFF',
+                                                        borderRadius: 5,
+                                                        }
+                                                    },
+                                                    {
+                                                        name: "园林 绿化",
+                                                        label: {
+                                                            width: 20,
+                                                            overflow: "break",
+                                                            height: 80,
+                                                            borderWidth: 3,
+                                                        borderColor: '#B0BC00',
+                                                        borderStyle: 'solid',
+                                                        backgroundColor:'#FFFFFF',
+                                                        borderRadius: 5,
+                                                        }
+                                                    },
+                                                    {
+                                                        name: "食堂\n管理",
+                                                        label: {
+                                                            width: 20,
+                                                            overflow: "break",
+                                                            height: 80,
+                                                            borderWidth: 3,
+                                                        borderColor: '#B0BC00',
+                                                        borderStyle: 'solid',
+                                                        backgroundColor:'#FFFFFF',
+                                                        borderRadius: 5,
+                                                        }
+                                                    },
+                                                ]   ,
+                                                label: {
+                                                backgroundColor: "#B0BC00",
+                                                color: "#FFFFFF",
+                                                width: 80,
+                                                height: 40,
+                                                borderRadius: 10,
+                                                fontSize:15,
+                                                // fontWeight:40
+                                            }   ,
+                                            lineStyle:{
+                                               color:"#B0BC00",
+                                            }
+                                            } 
+                                            
+                                            ],
+                                            label: {
+                                                backgroundColor: "#B0BC00",
+                                                color: "#FFFFFF",
+                                                width: 80,
+                                                height: 40,
+                                                borderRadius: 10,
+                                                fontSize:15,
+                                                // fontWeight:40
+                                            },
+                                            lineStyle:{
+                                               color:"#B0BC00",
+                                            }
+                                        },
+                                        {
+                                            name: "市场总监",
+                                            children: [
+                                                {
+                                                    name: "市场研发",
+                                                    label: {
+                                                        width: 20,
+                                                        overflow: "break",
+                                                        height: 80,
+                                                        borderWidth: 3,
+                                                        borderColor: '#16A5A5',
+                                                        borderStyle: 'solid',
+                                                        backgroundColor:'#FFFFFF',
+                                                        borderRadius: 5,
+                                                    }
+                                                },
+                                                {
+                                                    name: "市场策划",
+                                                    label: {
+                                                        width: 20,
+                                                        overflow: "break",
+                                                        height: 80,
+                                                        borderWidth: 3,
+                                                        borderColor: '#16A5A5',
+                                                        borderStyle: 'solid',
+                                                        backgroundColor:'#FFFFFF',
+                                                        borderRadius: 5,
+                                                    }
+                                                }
+                                            ],
+                                            label: {
+                                                backgroundColor: "#16A5A5",
+                                                color: "#FFFFFF",
+                                                width: 80,
+                                                height: 40,
+                                                borderRadius: 10,
+                                                fontSize:15,
+                                                // fontWeight:40
+                                            },
+                                            lineStyle:{
+                                               color:"#16A5A5",
+                                            }
+                                        },
+                                        {
+                                            name: "工程总监",
+                                            children: [{
+                                                name: "高空清洁 维修",
+                                                label: {
+                                                    width: 20,
+                                                    overflow: "break",
+                                                    height: 80,
+                                                    borderWidth: 3,
+                                                        borderColor: '#68BC00',
+                                                        borderStyle: 'solid',
+                                                        backgroundColor:"white",
+                                                        borderRadius: 5,
+                                                        // position: ["60%","50%"],
+                                                        // padding:[]
+                                                        // position:bottom
+                                                }
+                                            },
+                                            {
+                                                name: "开荒\n打蜡\n 结晶",
+                                                label: {
+                                                    backgroundColor:"white",
+                                                    width: 20,
+                                                    overflow: "break",
+                                                    height: 80,
+                                                    borderWidth: 3,
+                                                        borderColor: '#68BC00',
+                                                        borderStyle: 'solid',
+                                                        borderRadius: 5,
+                                                },
+
+                                            }
+                                            ],
+                                            label: {
+                                                backgroundColor: "#68BC00",
+                                                color: "#FFFFFF",
+                                                width: 80,
+                                                height: 40,
+                                                borderRadius: 10,
+                                                fontSize:15,
+                                                // fontWeight:40
+                                            },
+                                            lineStyle:{
+                                               color:"#68BC00",
+                                            }
+                                        }
+                                    ],
+                                    label: {
+                                        backgroundColor: "#68BC00",
+                                        color: "#FFFFFF",
+                                        width: 80,
+                                        height: 40,
+                                        borderRadius: 20,
+                                        fontSize:17
+                                    },
+                                    lineStyle:{
+                                      color:"#68BC00",
+                                    }
+
+                                }
+                            ],
+                            lineStyle:{
+                                color:"#009CE0",
+                            },
+                            label: {
+                                backgroundColor: "#0062B1",
+                                color: "#FFFFFF",
+                                width: 80,
+                                height: 40,
+                                borderRadius: 20,
+                                fontSize:20
+                            }
+                        }
+                    ],
+                    edgeShape: "polyline", //直线
+                    initialTreeDepth: -1, //显示几步
+                    orient: "TB",  //从上往下分布
+                    // distance: 20,
+                    lineStyle: {
+                        width: 4,
+                        // length:15
+                    },
+                    label: {
+                        // fontSize: 20,
+                        // border:"1px solid  gray"
+                    }
+                },
+
+            ]
+        }
+        // 5. 渲染图表
+        chart1.setOption(option1)
+    </script>
+</body>
+
+</html>
